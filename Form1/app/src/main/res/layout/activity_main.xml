@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/custom"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtN1"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginBottom="36dp"
+        android:fontFamily="sans-serif"
+        android:hint="Introduce un numero"
+        android:singleLine="true"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/txtOp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtOp"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif"
+        android:hint="Introduce el signo de la operacion"
+        android:textSize="16sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/txtN2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtN1" />
+
+    <EditText
+        android:id="@+id/txtN2"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="sans-serif"
+        android:hint="Introduce un numero"
+        android:textSize="16sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/bttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtOp" />
+
+    <Button
+        android:id="@+id/bttn"
+        style="@android:style/Widget.DeviceDefault.Light.Button"
+        android:layout_width="85dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="302dp"
+        android:background="#4B8DFF"
+        android:fontFamily="sans-serif-medium"
+        android:forceHasOverlappingRendering="false"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
+        android:text="Operar"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Material.Display1"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtN2" />
+
+    <TextView
+        android:id="@+id/txtV"
+        android:layout_width="266dp"
+        android:layout_height="31dp"
+        android:fontFamily="sans-serif"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttn"
+        app:layout_constraintVertical_bias="0.343" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

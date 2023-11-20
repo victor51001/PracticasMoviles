@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|start"
+        android:background="#3FBAB6"
+        android:text="texto1"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|end"
+        android:background="#A2FFAB"
+        android:text="texto2"
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|center"
+        android:background="#DD1212"
+        android:text="texto3"
+        />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|start"
+        android:background="#4B90FF"
+        android:text="texto4"
+        />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|end"
+        android:background="#C2FF1C"
+        android:text="texto5"
+        />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center|center"
+        android:background="#FF8341"
+        android:text="texto6"
+        />
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|start"
+        android:background="#022077"
+        android:text="texto7"
+        />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|end"
+        android:background="#005709"
+        android:text="texto8"
+        />
+
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center"
+        android:background="#5E0000"
+        android:text="texto9"
+        />
+
+</FrameLayout>

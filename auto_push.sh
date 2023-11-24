@@ -13,7 +13,6 @@ git commit -m "Automated commit - $current_datetime"
 
 # Git push con nombre de usuario y token
 git push "https://github.com/victor51001/ProyectosMoviles.git"
-git push 
 
 git status 
 

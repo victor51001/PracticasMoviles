@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fondos">
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="179dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bttn10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                tools:layout_editor_absoluteX="91dp"
+                tools:layout_editor_absoluteY="315dp" />
+
+            <Button
+                android:id="@+id/bttn20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                tools:layout_editor_absoluteX="234dp"
+                tools:layout_editor_absoluteY="315dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/bttn50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                tools:layout_editor_absoluteX="93dp"
+                tools:layout_editor_absoluteY="388dp" />
+
+            <Button
+                android:id="@+id/bttn100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                tools:layout_editor_absoluteX="230dp"
+                tools:layout_editor_absoluteY="384dp" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/bttnAñadirFondos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="273dp"
+        android:text="Añadir fondos"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtnmTexto"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtnmTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="180dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bttnAñadirFondos" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="195dp"
+        android:text="Introduce la cantidad que deseas añadir:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

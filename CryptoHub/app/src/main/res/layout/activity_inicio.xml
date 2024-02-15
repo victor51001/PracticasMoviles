@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio">
+
+    <Button
+        android:id="@+id/bttnAñadir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="66dp"
+        android:layout_marginEnd="41dp"
+        android:text="Añadir Fondos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Tus fondos:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtvwFondos"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtvwFondos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="66dp"
+        android:text="prueba"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="294dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/bttnSalir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow android:layout_height="77dp">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txtvwCantidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Cantidad"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="208dp" />
+
+            <TextView
+                android:id="@+id/txtvwPrecio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="Precio"
+                tools:layout_editor_absoluteX="260dp"
+                tools:layout_editor_absoluteY="210dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imgBit"
+                android:layout_width="58dp"
+                android:layout_height="77dp"
+                android:paddingLeft="20dp"
+                app:srcCompat="@drawable/bitcoin"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="238dp" />
+
+            <TextView
+                android:id="@+id/txtvwCB"
+                android:layout_width="3dp"
+                android:layout_height="14dp"
+                android:paddingLeft="20dp"
+                tools:layout_editor_absoluteX="167dp"
+                tools:layout_editor_absoluteY="275dp" />
+
+            <TextView
+                android:id="@+id/txtvwPB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="20000"
+                tools:layout_editor_absoluteX="256dp"
+                tools:layout_editor_absoluteY="270dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="325dp"
+                tools:layout_editor_absoluteY="238dp" />
+
+            <Button
+                android:id="@+id/bttnBMas"
+                android:layout_width="59dp"
+                android:layout_height="41dp"
+                android:paddingLeft="20dp"
+                android:text="+"
+                tools:layout_editor_absoluteX="325dp"
+                tools:layout_editor_absoluteY="238dp" />
+
+            <Button
+                android:id="@+id/bttnBMenos"
+                android:layout_width="59dp"
+                android:layout_height="41dp"
+                android:paddingLeft="20dp"
+                android:text="-"
+                tools:layout_editor_absoluteX="325dp"
+                tools:layout_editor_absoluteY="279dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imgEther"
+                android:layout_width="54dp"
+                android:layout_height="72dp"
+                android:paddingLeft="20dp"
+                app:srcCompat="@drawable/ethereum"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="355dp" />
+
+            <TextView
+                android:id="@+id/txtvwCE"
+                android:layout_width="6dp"
+                android:layout_height="12dp"
+                android:paddingLeft="20dp"
+                tools:layout_editor_absoluteX="167dp"
+                tools:layout_editor_absoluteY="378dp" />
+
+            <TextView
+                android:id="@+id/txtvwPE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="5000"
+                tools:layout_editor_absoluteX="256dp"
+                tools:layout_editor_absoluteY="371dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="325dp"
+                tools:layout_editor_absoluteY="238dp" />
+
+            <Button
+                android:id="@+id/bttnEMas"
+                android:layout_width="59dp"
+                android:layout_height="41dp"
+                android:paddingLeft="20dp"
+                android:text="+"
+                tools:layout_editor_absoluteX="325dp"
+                tools:layout_editor_absoluteY="355dp" />
+
+            <Button
+                android:id="@+id/bttnEMenos"
+                android:layout_width="59dp"
+                android:layout_height="41dp"
+                android:paddingLeft="20dp"
+                android:text="-"
+                tools:layout_editor_absoluteX="325dp"
+                tools:layout_editor_absoluteY="396dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imgRip"
+                android:layout_width="54dp"
+                android:layout_height="66dp"
+                android:paddingLeft="20dp"
+                app:srcCompat="@drawable/ripple"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="461dp" />
+
+            <TextView
+                android:id="@+id/txtvwCR"
+                android:layout_width="5dp"
+                android:layout_height="14dp"
+                android:paddingLeft="20dp"
+                tools:layout_editor_absoluteX="167dp"
+                tools:layout_editor_absoluteY="485dp" />
+
+            <TextView
+                android:id="@+id/txtvwPR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="700"
+                tools:layout_editor_absoluteX="250dp"
+                tools:layout_editor_absoluteY="482dp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="325dp"
+                tools:layout_editor_absoluteY="238dp" />
+
+            <Button
+                android:id="@+id/bttnRMas"
+                android:layout_width="59dp"
+                android:layout_height="41dp"
+                android:paddingLeft="20dp"
+                android:text="+"
+                tools:layout_editor_absoluteX="325dp"
+                tools:layout_editor_absoluteY="468dp" />
+
+            <Button
+                android:id="@+id/bttnRMenos"
+                android:layout_width="59dp"
+                android:layout_height="41dp"
+                android:paddingLeft="20dp"
+                android:text="-"
+                tools:layout_editor_absoluteX="325dp"
+                tools:layout_editor_absoluteY="509dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/imgLite"
+                android:layout_width="71dp"
+                android:layout_height="79dp"
+                android:paddingLeft="20dp"
+                app:srcCompat="@drawable/litecoin"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="572dp" />
+
+            <TextView
+                android:id="@+id/txtvwCL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                tools:layout_editor_absoluteX="167dp"
+                tools:layout_editor_absoluteY="600dp" />
+
+            <TextView
+                android:id="@+id/txtvwPL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:text="20"
+                tools:layout_editor_absoluteX="250dp"
+                tools:layout_editor_absoluteY="603dp" />
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                tools:layout_editor_absoluteX="325dp"
+                tools:layout_editor_absoluteY="238dp" />
+
+            <Button
+                android:id="@+id/bttnLMas"
+                android:layout_width="59dp"
+                android:layout_height="41dp"
+                android:paddingLeft="20dp"
+                android:text="+"
+                tools:layout_editor_absoluteX="325dp"
+                tools:layout_editor_absoluteY="591dp" />
+
+            <Button
+                android:id="@+id/bttnLMenos"
+                android:layout_width="59dp"
+                android:layout_height="41dp"
+                android:paddingLeft="20dp"
+                android:text="-"
+                tools:layout_editor_absoluteX="325dp"
+                tools:layout_editor_absoluteY="632dp" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/bttnSalir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="Salir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

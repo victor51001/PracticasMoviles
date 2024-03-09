@@ -23,7 +23,8 @@ class Registro : AppCompatActivity() {
                 val usuario = edtUser.text.toString()
                 val clave = edtPass.text.toString()
 
-                val cursor = bd.query("usuario", arrayOf("user"), "user = ?", arrayOf(usuario), null, null, null)
+                val cursor = bd.query("usuario", arrayOf("user"), "user = ?",
+                    arrayOf(usuario), null, null, null)
 
                 if (cursor.moveToFirst()) {
                     Toast.makeText(this, "El usuario ya existe.", Toast.LENGTH_SHORT).show()

@@ -86,7 +86,8 @@ class Inicio : AppCompatActivity() {
         val bd = admin.readableDatabase
 
         try {
-            val cursor = bd.query("usuario", arrayOf("saldo"), "user = ?", arrayOf(usuario), null, null, null)
+            val cursor = bd.query("usuario", arrayOf("saldo"),
+                "user = ?", arrayOf(usuario), null, null, null)
             var saldo = 0
             if (cursor.moveToFirst()) {
                 saldo = cursor.getInt(cursor.getColumnIndex("saldo"))
@@ -113,7 +114,8 @@ class Inicio : AppCompatActivity() {
     fun comprar(usuario: String?, moneda: String, textFondos: TextView) {
         val admin = SQLAd(this, "Cryptos", null, 1)
         val bd = admin.readableDatabase
-        val cursor = bd.query("usuario", arrayOf(moneda, "saldo"), "user = ?", arrayOf(usuario), null, null, null)
+        val cursor = bd.query("usuario", arrayOf(moneda, "saldo"),
+            "user = ?", arrayOf(usuario), null, null, null)
         var cantidad = 0
         var saldo = 0
         if (cursor.moveToFirst()) {
@@ -156,7 +158,9 @@ class Inicio : AppCompatActivity() {
     fun vender(usuario: String?, moneda: String, textFondos: TextView) {
         val admin = SQLAd(this, "Cryptos", null, 1)
         val bd = admin.readableDatabase
-        val cursor = bd.query("usuario", arrayOf(moneda, "saldo"), "user = ?", arrayOf(usuario), null, null, null)
+        val cursor = bd.query("usuario",
+            arrayOf(moneda, "saldo"), "user = ?",
+            arrayOf(usuario), null, null, null)
         var cantidad = 0
         var saldo = 0
         if (cursor.moveToFirst()) {
@@ -195,12 +199,15 @@ class Inicio : AppCompatActivity() {
         }
     }
     @SuppressLint("Range")
-    fun actualizarCantidades(usuario: String?, textCB: TextView, textCE: TextView, textCR: TextView, textCL: TextView) {
+    fun actualizarCantidades(usuario: String?, textCB: TextView, textCE: TextView,
+                             textCR: TextView, textCL: TextView) {
         val admin = SQLAd(this, "Cryptos", null, 1)
         val bd = admin.readableDatabase
 
         try {
-            val cursor = bd.query("usuario", arrayOf("bitcoin", "ethereum", "ripple", "litecoin"), "user = ?", arrayOf(usuario), null, null, null)
+            val cursor = bd.query("usuario",
+                arrayOf("bitcoin", "ethereum", "ripple", "litecoin"),
+                "user = ?", arrayOf(usuario), null, null, null)
             var cantidadBitcoin = 0
             var cantidadEthereum = 0
             var cantidadRipple = 0
@@ -241,7 +248,6 @@ class Inicio : AppCompatActivity() {
             cursor.close()
             bd.close()
 
-            // Actualiza el TextView con la cantidad obtenida de la base de datos
             textView.text = cantidad.toString()
         } catch (e: Exception) {
             bd.close()

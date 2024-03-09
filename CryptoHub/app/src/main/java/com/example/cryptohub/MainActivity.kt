@@ -29,10 +29,10 @@ class MainActivity : AppCompatActivity() {
             val bd = admin.readableDatabase
             val usuario = edtUser.text.toString()
             val clave = edtPass.text.toString()
-            edtUser.text.clear()
-            edtPass.text.clear()
 
-            val cursor = bd.query("usuario", arrayOf("user", "clave"), "user = ? AND clave = ?", arrayOf(usuario, clave), null, null, null)
+            val cursor = bd.query("usuario", arrayOf("user", "clave"),
+                "user = ? AND clave = ?", arrayOf(usuario, clave),
+                null, null, null)
 
             if (cursor.moveToFirst()) {
                 val intento = Intent(this, Inicio::class.java)
@@ -45,6 +45,9 @@ class MainActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
             }
+
+            edtUser.text.clear()
+            edtPass.text.clear()
             cursor.close()
             bd.close()
         }
